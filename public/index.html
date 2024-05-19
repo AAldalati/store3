@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.9.3/lib/p5.js"></script>
+    <title>Document</title>
+</head>
+<body style="background-color: rgb(56, 51, 51);">
+    <button style="font-size: xx-large; size: 1000px;" id="back"><--back</button>
+    <center id="main_page">
+        <table style="background-color: brown;">
+            <tr>
+                <td style="font-size: xx-large; size: 1000px;">AOO- Aser Ousama Organization</td>
+                <td style="font-size: xx-large; size: 1000px; color: brown;">______________________________________</td>
+                <td><button id="account" style="font-size: xx-large; size: 1000px; color: burlywood;">accounts</button></td>
+                <td><a href="Info.html"><button style="font-size: xx-large; size: 1000px; color: burlywood;">Info</button></a></td>
+            </tr>
+        </table>
+    </center>
+    <center id="main">
+        <form>
+            <input type="button" id="login_btn" style="font-size: xx-large; size: 1000px; color: blue;" value="Login">
+            <br>
+            <input type="button" id="sign_up_btn" style="font-size: xx-large; size: 1000px; color: blue;" value="Sign up">
+        </form>
+    </center>
+    <center id="login">
+        <form>
+            <label for="fn" style="font-size: xx-large; size: 1000px; color: blue;">enter your first name:</label>
+            <input type="text" id="fn" style="font-size: xx-large; size: 1000px; color: blue;">
+            <br>
+            <label for="ln" style="font-size: xx-large; size: 1000px; color: blue;">enter your last name:</label>
+            <input type="text" id="ln" style="font-size: xx-large; size: 1000px; color: blue;">
+            <br>
+            <label for="pass" style="font-size: xx-large; size: 1000px; color: blue;">enter your password:</label>
+            <input type="password" id="pass" style="font-size: xx-large; size: 1000px; color: blue;">
+            <br>
+            <input type="button" id="login_btn_submit" style="font-size: xx-large; size: 1000px; color: blue;" value="submit">
+        </form>
+    </center>
+    <center id="sign_up">
+        <label for="fn_" style="font-size: xx-large; size: 1000px; color: blue;">enter your first name:</label>
+        <input type="text" id="fn_" style="font-size: xx-large; size: 1000px; color: blue;">
+        <br>
+        <label for="ln_" style="font-size: xx-large; size: 1000px; color: blue;">enter your last name:</label>
+        <input type="text" id="ln_" style="font-size: xx-large; size: 1000px; color: blue;">
+        <br>
+        <label for="pass_" style="font-size: xx-large; size: 1000px; color: blue;">enter your password:</label>
+        <input type="password" id="pass_" style="font-size: xx-large; size: 1000px; color: blue;">
+        <br>
+        <input type="button" id="sign_up_btn_submit" style="font-size: xx-large; size: 1000px; color: blue;" value="submit">
+    </center>
+    <center id="admin">
+        <label for="catigory" style="font-size: xx-large; size: 1000px; color: blue;">enter the catigory of the product:</label>
+        <input type="text" id="catigory" style="font-size: xx-large; size: 1000px; color: blue;">
+        <br><br>
+        <label for="txt" style="font-size: xx-large; size: 1000px; color: blue;">enter the name of the product:</label>
+        <input type="text" id="txt" style="font-size: xx-large; size: 1000px; color: blue;">
+        <br><br>
+        <label for="price" style="font-size: xx-large; size: 1000px; color: blue;">enter the price of the product:</label>
+        <input type="number" id="price" style="font-size: xx-large; size: 1000px; color: blue;">
+        <br><br>
+        <label for="pn" style="font-size: xx-large; size: 1000px; color: blue;">enter the your phone number:</label>
+        <input type="tel" id="pn" style="font-size: xx-large; size: 1000px; color: blue;">
+        <br><br>
+        <input type="button" id="post" style="font-size: xx-large; size: 1000px; color: blue;" value="submit">
+    </center>
+    <div id="page" style="background-image: url(download.jpg); width: 1000px; height: 1000px;">
+        <input type="search" id="search" style="color: antiquewhite;width: 92%; height: 30px;padding: 4px; outline: none; border: none; background-color: black; margin: 4px 0; border-radius: 4px;">
+        <button id="search_btn">search</button>
+        <table>
+            <tbody id="tbody"></tbody>
+        </table>
+    </div>
+    <script src="login.js"></script>
+</body>
+</html>
